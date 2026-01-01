@@ -33,9 +33,9 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(" My First App "),
+        title: Text(" My testing App "),
       ),
-      body: Text(" Hello World "),
+      body: Text(" ram ram laddar "),
     );
   }
 }
