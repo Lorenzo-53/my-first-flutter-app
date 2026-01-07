@@ -28,14 +28,46 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  bool showText = false;
+
+  void handlebutton() {
+    setState(() {
+      showText = !showText;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text(" My testing App "),
+        title: Text(" DIHH-VLOPER HU LALA"),
       ),
-      body: Text(" ram ram laddar "),
+      body: GridView(
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 3,
+          mainAxisSpacing: 10,
+          crossAxisSpacing: 10,
+        ),
+        children: [
+          Image.asset('assets/images/2.jpg'),
+          Image.asset('assets/images/3.jpg'),
+          Image.asset('assets/images/a.png'),
+          Image.asset('assets/images/image.png'),
+          Image.asset('assets/images/2.jpg'),
+          Image.asset('assets/images/3.jpg'),
+          Image.asset('assets/images/a.png'),
+          Image.asset('assets/images/image.png'),
+          Image.asset('assets/images/2.jpg'),
+          Image.asset('assets/images/3.jpg'),
+          Image.asset('assets/images/a.png'),
+          Image.asset('assets/images/image.png'),
+          Image.asset('assets/images/2.jpg'),
+          Image.asset('assets/images/3.jpg'),
+          Image.asset('assets/images/a.png'),
+          Image.asset('assets/images/image.png'),
+        ],
+      ),
     );
   }
 }
