@@ -43,28 +43,17 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text("DEVELOPER HU LALA"),
       ),
-      body: ListView(
-        children: [
-          Text("Hello World"),
-          Image(image: AssetImage("assets/images/2.jpg")),
-          Text("Hello World"),
-          Image(image: AssetImage("assets/images/2.jpg")),
-          Text("Hello World"),
-          Image(image: AssetImage("assets/images/2.jpg")),
-          Text("Hello World"),
-          Image(image: AssetImage("assets/images/2.jpg")),
-          Text("Hello World"),
-          Image(image: AssetImage("assets/images/2.jpg")),
-          Text("Hello World"),
-          Image(image: AssetImage("assets/images/2.jpg")),
-          Text("Hello World"),
-          Image(image: AssetImage("assets/images/2.jpg")),
-          Text("Hello World"),
-          Image(image: AssetImage("assets/images/2.jpg")),
-          Text("Hello World"),
-          Text("Hello World"),
-          Text("Hello World"),
-        ],
+      body: ListView.builder(
+        itemBuilder: (context, index) {
+          return Padding(
+            padding: const EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
+            child: Text(
+              "meow meow nigga ",
+              style: TextStyle(fontSize: 21, fontWeight: FontWeight.w600),
+            ),
+          );
+        },
+        itemCount: 40,
       ),
     );
   }
